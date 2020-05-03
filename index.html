@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Portifolio Teknoled</title>
+    <style>
+        div#t1{
+            font: normal 20pt Arial;
+            text-align: center; 
+        }
+        div#area1 {
+            font: normal 15pt Arial;
+            background: green;
+            color: white;            
+            width: 200PX;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        div#area2 {
+            font: normal 15pt Arial;            
+            background: green;
+            position: absolute;
+            top: 135px;
+            left: 220px;
+            color: white;            
+            width: 200PX;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="t1">
+        <h1 id="t1">Portfólio Teknoled</h1>
+    </div>
+    <div id="area1" 
+         onmousemove="btn1_in('area1')" 
+         onmouseup="btn1_up('area1')" 
+         onmouseout="btn1_out('area1')" 
+         onmousedown="btn1_down('area1')">
+          Paineis Sequenciais
+    </div>
+    <div id="area2" 
+     
+         onmousemove="btn1_in('area2')" 
+         onmouseup="btn1_up('area2')" 
+         onmouseout="btn1_out('area2')" 
+         onmousedown="btn1_down('area2')">
+         
+        Paineis Aleatorio    
+           
+    </div>
+   
+    <script>
+       
+       
+        function btn1_in(x){   
+            var a = window.document.getElementById(x)        
+            a.style.background = 'blue';
+        }
+        function btn1_out(x){   
+            var a = window.document.getElementById(x)        
+            a.style.background = 'green';
+        }
+        function btn1_up(x){
+            var a = window.document.getElementById(x)
+            a.style.background = 'green'; 
+           
+        }
+        function btn1_down(x){
+            var a = window.document.getElementById(x)
+            a.style.background = 'gray'; 
+            window.open("Documentos/teste.pdf");
+           // <a href="Documentos/teste.pdf" target="_blank">samp</a> 
+        }
+      
+    </script>
+
+</body>
+
+</html>
